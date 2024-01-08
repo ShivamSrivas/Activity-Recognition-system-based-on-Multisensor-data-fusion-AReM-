@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Input Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Model Input Form</h2>
+        <form id="modelForm">
+            <label for="avg_rss12">Average RSS12:</label>
+            <input type="text" id="avg_rss12" name="avg_rss12" required>
+
+            <label for="var_rss12">Variance RSS12:</label>
+            <input type="text" id="var_rss12" name="var_rss12" required>
+
+            <label for="avg_rss13">Average RSS13:</label>
+            <input type="text" id="avg_rss13" name="avg_rss13" required>
+
+            <label for="var_rss13">Variance RSS13:</label>
+            <input type="text" id="var_rss13" name="var_rss13" required>
+
+            <label for="avg_rss23">Average RSS23:</label>
+            <input type="text" id="avg_rss23" name="avg_rss23" required>
+
+            <label for="var_rss23">Variance RSS23:</label>
+            <input type="text" id="var_rss23" name="var_rss23" required>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
