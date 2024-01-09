@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Input Form</title>
+    <title>Activity-Recognition-system-based-on-Multisensor-data-fusion-AReM</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -52,8 +52,8 @@
 </head>
 <body>
     <div class="container">
-        <h2>Model Input Form</h2>
-        <form id="modelForm">
+        <h2>Activity-Recognition-system-based-on-Multisensor-data-fusion-AReM</h2>
+        <form id="modelForm" action="/predict" method="post">
             <label for="avg_rss12">Average RSS12:</label>
             <input type="text" id="avg_rss12" name="avg_rss12" required>
 
@@ -72,7 +72,8 @@
             <label for="var_rss23">Variance RSS23:</label>
             <input type="text" id="var_rss23" name="var_rss23" required>
 
-            <button type="button" onclick="submitForm()">Submit</button>
+            <span id="output">You might be {{ prediction }}</span>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
